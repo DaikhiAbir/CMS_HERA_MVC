@@ -1,0 +1,58 @@
+﻿@model CMS_HERA_MVC.Models.Role
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Role</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_role)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.titre_role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.titre_role)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permissions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permissions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.position_role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.position_role)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.statut_role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.statut_role)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

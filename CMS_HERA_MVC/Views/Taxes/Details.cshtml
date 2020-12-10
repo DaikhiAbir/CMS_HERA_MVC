@@ -1,0 +1,42 @@
+﻿@model CMS_HERA_MVC.Models.Taxe
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Taxe</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nom_Taxe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nom_Taxe)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Valeur_Taxe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Valeur_Taxe)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status_Taxe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status_Taxe)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Taxe_Col)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Taxe_Col)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
